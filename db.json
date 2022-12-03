@@ -1,0 +1,382 @@
+{
+    "new-arrival": [
+        {
+            "id": 1,
+            "kode": "NP-01",
+            "nama": "Hiking Shoes",
+            "harga": 299000,
+            "status": true, 
+            "gambar": "Sepatu_Gunung_SNTA.jpg"
+        },
+        {
+            "id": 2,
+            "kode": "NP-02",
+            "nama": "Hiking Jacket",
+            "harga": 159000,
+            "status": true,
+            "gambar": "Hiking-Jacket.jpg"
+        },
+        {
+            "id": 3,
+            "kode": "NP-03",
+            "nama": "Daypack 60 L",
+            "harga": 135000,
+            "status": true,
+            "gambar": "Daypack60L.jpg"
+        },
+        {
+            "id": 4,
+            "kode": "NP-04",
+            "nama": "Golden Shirt",
+            "harga": 65000,
+            "status": true,
+            "gambar": "Golden-Shirt.jpg"
+        },
+        {
+            "id": 5,
+            "kode": "NP-05",
+            "nama": "Grey Hiking Hat",
+            "harga": 50000,
+            "status": true,
+            "gambar": "Grey-Hat.jpg"
+        }
+    ],
+    "best-seller": [
+        {
+            "id": 1,
+            "kode": "BS-01",
+            "nama": "Mini Daypack",
+            "harga": 95000,
+            "status": true,
+            "gambar": "Mini-Daypack.jpg"
+        },
+        {
+            "id": 2,
+            "kode": "BS-02",
+            "nama": "Waterproof Jacket",
+            "harga": 220000,
+            "status": true,
+            "gambar": "Yellow-Waterproof.jpg"
+        },
+        {
+            "id": 3,
+            "kode": "BS-03",
+            "nama": "Maroon Hiking Jacket",
+            "harga": 185000,
+            "status": true,
+            "gambar": "Maroon-Jacket.jpg"
+        },
+        {
+            "id": 4,
+            "kode": "BS-04",
+            "nama": "Black Hiking Jacket",
+            "harga": 155000,
+            "status": true,
+            "gambar": "Black-Jacket.jpg"
+        },
+        {
+            "id": 5,
+            "kode": "BS-05",
+            "nama": "Silver Hiking Shoes",
+            "harga": 335000,
+            "status": true,
+            "gambar": "Silver-Shoes.jpg"
+        }
+    ],
+    "articles": [
+        {
+            "id": 1,
+            "judul": "FUN FACT ABOUT MERBABU",
+            "content": "Mount Merbabu (3.145 m) is a dormant stratovolcano which is the second most popular mountain in Central Java,after Mount Merapi. With its not particularly rough terrain and the presence of a clear, well-marked path upto top, trekking Mount Merbabu with your kids and family should be on your to-do list when visiting Yogyakarta or other areas in Central Java.",
+            "sumber": "climbindonesia.com",
+            "url": "https://climbindonesia.com/mount-merbabu-trekking-with-kids/",
+            "gambar": "merbabu.png"
+        },
+        {
+            "id": 2,
+            "judul": "GENERAL ADVICE ON HIKING",
+            "content": "Indonesia is among the most volcanically active countries on the planet, which means there are considerable dangers associated with climbing mountain peaks. Indonesian and international volcanology agencies and local village advice should be sought and respected. It really can be a matter of life and death.",
+            "sumber": "gunungbagging.com",
+            "url": "https://www.gunungbagging.com/resources/advice/",
+            "gambar": "first-aid.png"
+        },
+        {
+            "id": 3,
+            "judul": "MYSTICAL MOUNTAIN STORIES",
+            "content": "Indonesia is not only famous for its beautiful beaches, but also its mesmerizing spine of mountains. Some of them are favorites for climbers. They are challenging, not only for their heights and tracks, but also the myths and mystical auras that they 'radiate'.",
+            "sumber": "indoindians.com",
+            "url": "https://www.indoindians.com/mystical-stories-about-mountains-in-java-indonesia/",
+            "gambar": "Semeru.png"
+        }
+    ],
+    "jobs": [
+        {
+            "id": 1,
+            "position": "Asisten Warehouse",
+            "type": "Internship",
+            "location": "Karangmalang",
+            "requirement": "Requirement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores fugit atque culpa natus dolores dolore facilis id unde soluta, ut sit alias est, distinctio ipsa dolorum beatae veritatis quasi! Eius!",
+            "status": true
+        },
+        {
+            "id": 2,
+            "position": "Cashier",
+            "type": "Full Time",
+            "location": "Malioboro",
+            "requirement": "Requirement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores fugit atque culpa natus dolores dolore facilis id unde soluta, ut sit alias est, distinctio ipsa dolorum beatae veritatis quasi! Eius!",
+            "status": true
+        },
+        {
+            "id": 3,
+            "position": "Asset Management",
+            "type": "Full Time",
+            "location": "Karangmalang",
+            "requirement": "Requirement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores fugit atque culpa natus dolores dolore facilis id unde soluta, ut sit alias est, distinctio ipsa dolorum beatae veritatis quasi! Eius!",
+            "status": true
+        },
+        {
+            "id": 4,
+            "position": "Driver",
+            "type": "Full Time",
+            "location": "Malioboro",
+            "requirement": "Requirement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores fugit atque culpa natus dolores dolore facilis id unde soluta, ut sit alias est, distinctio ipsa dolorum beatae veritatis quasi! Eius!",
+            "status": false
+        },
+        {
+            "id": 5,
+            "position": "Security",
+            "type": "Internship",
+            "location": "Malioboro",
+            "requirement": "Requirement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores fugit atque culpa natus dolores dolore facilis id unde soluta, ut sit alias est, distinctio ipsa dolorum beatae veritatis quasi! Eius!",
+            "status": false
+        }
+    ],
+    "shoes": [
+        {
+            "id": 1,
+            "kode": "NP-01",
+            "nama": "SNTA Orange Cream",
+            "harga": 299000,
+            "status": true, 
+            "gambar": "Sepatu_Gunung_SNTA.jpg"
+        },
+        {
+            "id": 2,
+            "kode": "BS-05",
+            "nama": "SNTA Silver Black",
+            "harga": 335000,
+            "status": true,
+            "gambar": "Silver-Shoes.jpg"
+        },
+        {
+            "id": 3,
+            "kode": "SH-01",
+            "nama": "Merrel Brown",
+            "harga": 300000,
+            "status": true,
+            "gambar": "Merrel brown shoes.jpg"
+        },
+        {
+            "id": 4,
+            "kode": "SH-02",
+            "nama": "Merrel Grey",
+            "harga": 310000,
+            "status": true,
+            "gambar": "Merrel grey shoes.jpg"
+        },
+        {
+            "id": 5,
+            "kode": "SH-03",
+            "nama": "Merrel Grey Brown",
+            "harga": 310000,
+            "status": true,
+            "gambar": "Merrel grey brown.jpg"
+        },
+        {
+            "id": 6,
+            "kode": "SH-04",
+            "nama": "New Balance Black",
+            "harga": 345000,
+            "status": true,
+            "gambar": "New balance hiking shoes.jpg"
+        },
+        {
+            "id": 7,
+            "kode": "SH-05",
+            "nama": "Nike Cream",
+            "harga": 640000,
+            "status": true,
+            "gambar": "Nike hiking cream.jpg"
+        },
+        {
+            "id": 8,
+            "kode": "SH-06",
+            "nama": "Adidas Brown",
+            "harga": 899000,
+            "status": true,
+            "gambar": "Adidas hiking brown.jpg"
+        },
+        {
+            "id": 9,
+            "kode": "SH-07",
+            "nama": "Adidas Cream",
+            "harga": 910000,
+            "status": true,
+            "gambar": "Adidas hiking cream.jpg"
+        },
+        {
+            "id": 10,
+            "kode": "SH-08",
+            "nama": "SNTA Brown Orange",
+            "harga": 325000,
+            "status": true,
+            "gambar": "SNTA brown orange.jpg"
+        },
+        {
+            "id": 11,
+            "kode": "SH-09",
+            "nama": "SNTA Red Brown",
+            "harga": 320000,
+            "status": true,
+            "gambar": "SNTA red brown.jpg"
+        },
+        {
+            "id": 12,
+            "kode": "SH-10",
+            "nama": "SNTA Pink Grey",
+            "harga": 315000,
+            "status": true,
+            "gambar": "SNTA pink grey.jpg"
+        },
+        {
+            "id": 13,
+            "kode": "SH-11",
+            "nama": "SNTA Yellow Brown",
+            "harga": 325000,
+            "status": true,
+            "gambar": "SNTA yellow brown.jpg"
+        }
+    ],
+    "jacket": [
+        {
+            "id": 1,
+            "kode": "NP-02",
+            "nama": "Hiking Jacket",
+            "harga": 159000,
+            "status": true,
+            "gambar": "Hiking-Jacket.jpg"
+        },
+        {
+            "id": 2,
+            "kode": "BS-02",
+            "nama": "Waterproof Jacket",
+            "harga": 220000,
+            "status": true,
+            "gambar": "Yellow-Waterproof.jpg"
+        },
+        {
+            "id": 3,
+            "kode": "BS-03",
+            "nama": "Maroon Hiking Jacket",
+            "harga": 185000,
+            "status": true,
+            "gambar": "Maroon-Jacket.jpg"
+        },
+        {
+            "id": 4,
+            "kode": "BS-04",
+            "nama": "Black Hiking Jacket",
+            "harga": 155000,
+            "status": true,
+            "gambar": "Black-Jacket.jpg"
+        },
+        {
+            "id": 5,
+            "kode": "JK-01",
+            "nama": "Outdoor-Research Helium",
+            "harga": 175000,
+            "status": true,
+            "gambar": "Outdoor-Research Helium.jpg"
+        },
+        {
+            "id": 6,
+            "kode": "JK-02",
+            "nama": "Windbreaker Blue",
+            "harga": 135000,
+            "status": true,
+            "gambar": "Windbreaker Blue.jpg"
+        },
+        {
+            "id": 7,
+            "kode": "JK-03",
+            "nama": "Ice-Silk Black",
+            "harga": 144000,
+            "status": true,
+            "gambar": "Ice-Silk Black.jpg"
+        },
+        {
+            "id": 8,
+            "kode": "JK-04",
+            "nama": "Columbia Grey",
+            "harga": 156000,
+            "status": true,
+            "gambar": "Columbia Grey.jpg"
+        },
+        {
+            "id": 9,
+            "kode": "JK-05",
+            "nama": "Waterproof Black",
+            "harga": 158000,
+            "status": true,
+            "gambar": "Waterproof Black.jpg"
+        },
+        {
+            "id": 10,
+            "kode": "JK-06",
+            "nama": "BALR Blue",
+            "harga": 168000,
+            "status": true,
+            "gambar": "BALR Blue.jpeg"
+        },
+        {
+            "id": 11,
+            "kode": "JK-07",
+            "nama": "BALR Blue",
+            "harga": 168000,
+            "status": true,
+            "gambar": "BALR Blue.jpeg"
+        },
+        {
+            "id": 12,
+            "kode": "JK-08",
+            "nama": "Jack-Wolfskin Grey",
+            "harga": 230000,
+            "status": true,
+            "gambar": "Jack-Wolfskin Grey.jpg"
+        },
+        {
+            "id": 13,
+            "kode": "JK-09",
+            "nama": "Waterproof Yellow Grey",
+            "harga": 174000,
+            "status": true,
+            "gambar": "Waterproof Yellow Grey.jpg"
+        },
+        {
+            "id": 14,
+            "kode": "JK-10",
+            "nama": "Sport Grey Orange",
+            "harga": 174000,
+            "status": true,
+            "gambar": "Sport Grey Orange.jpg"
+        },
+        {
+            "id": 15,
+            "kode": "JK-11",
+            "nama": "Parka Cream",
+            "harga": 188000,
+            "status": true,
+            "gambar": "Parka Cream.jpg"
+        }
+    ]
+}

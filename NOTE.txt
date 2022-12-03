@@ -1,0 +1,5 @@
+//running this db.json// 
+
+npx json-server --watch db.json
+
+//Make sure you running db.json before access its data//
