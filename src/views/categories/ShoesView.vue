@@ -6,7 +6,7 @@
         <h1>{{ title }}</h1>
         <div class="shoes-product">
             <a class="shoes-item" v-for="shoe in shoes" :key="shoe.id">
-                <img class="shoes-img" :src="'/images/' + shoe.gambar" />
+                <img class="shoes-img" :src="'./img/' + shoe.gambar" />
                 <h6>{{ shoe.nama }}</h6>
                 <p>IDR {{ shoe.harga }}</p>
             </a>

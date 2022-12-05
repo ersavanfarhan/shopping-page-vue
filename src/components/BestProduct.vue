@@ -1,7 +1,7 @@
 <template>
     <div class="best-container">
     <a class="best-product" v-for="product in products" :key="product.id" href="#">
-      <img class="product-img" :src="'/images/' + product.gambar" />
+      <img class="product-img" :src="('./img/' + product.gambar)"/>
       <h6>{{ product.nama }}</h6>
       <p>IDR {{ product.harga }}</p>
     </a>

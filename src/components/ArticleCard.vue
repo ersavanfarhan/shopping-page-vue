@@ -1,7 +1,7 @@
 <template>
     <div class="article-container" v-for="article in articles" :key="article.id">
         <div>
-          <img class="article-img" :src="'/images/' + article.gambar" />
+          <img class="article-img" :src="'./img/' + article.gambar" />
         </div>
         <div div class="text" style="margin-left: 2vw">
             <h6 style="font-weight: bold;">{{article.judul}}</h6>
