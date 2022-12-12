@@ -1,5 +1,9 @@
 <template>
-    <div class="job-item" v-for="job in jobs" :key="job.id" v-show="job.status">
+    <h3><strong>Open Positions</strong></h3>
+    <div class="searching-bar">
+        <input class="form-control" placeholder="Searching for jobs" v-model="search">
+    </div>
+    <div class="job-item" v-for="job in filterJob" :key="job.id" v-show="job.status">
         <div>
             <h5><strong>{{ job.position }}</strong></h5>
             <h6>{{ job.type }}</h6>
@@ -28,6 +32,7 @@ export default {
 
     data() {
         return {
+            search: '',
             moreJob: true,
             jobs: []
         }
@@ -40,7 +45,6 @@ export default {
                 hiddenJob[i].status = true
                 this.moreJob = !this.moreJob
             }
-            // console.log(hiddenJob)
         }
     },
 
@@ -48,11 +52,24 @@ export default {
         const response = await axios.get('http://localhost:3000/jobs')
         this.jobs = response.data;
         // console.log("berhasil", response)
+    },
+
+    computed: {
+        filterJob: function() {
+            return this.jobs.filter((job) => {
+                return job.position.toLowerCase().match(this.search.toLowerCase())
+            });
+        }
     }
 }
 </script>
 
 <style scoped>
+.searching-bar {
+    display: flex;
+    gap: 15px;
+}
+
 .job-item {
     position: relative;
     border: 1px solid black;

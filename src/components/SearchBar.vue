@@ -1,10 +1,10 @@
 <template>
     <div class="search-container">
         <div class="search-list">
-            <div class="search-tool">
-                <input class="form-control me-2" placeholder="Find product here">
-                <button class="btn btn-outline-success">Search</button>
-            </div>
+            <form class="search-tool" :action="('http://localhost:8080/?#/' + keyword)">
+                <input class="form-control me-2" placeholder="Find product here" v-model="keyword">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
             <ul class="product-list-sm">
                 <li>
                     <router-link :to="{ name: 'Shoes' }">Shoes</router-link>
@@ -12,18 +12,36 @@
                 <li>
                     <router-link :to="{ name: 'Jacket' }">Jacket</router-link>
                 </li>
-                <li><a href="/">Sandal</a></li>
-                <li><a href="/">Hat</a></li>
-                <li><a href="/">Shirt</a></li>
-                <li><a href="/">Pant</a></li>
+                <li>
+                    <router-link :to="{ name: 'Sandal' }">Sandal</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Hat' }">Hat</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Shirt' }">Shirt</router-link>
+                </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Belt</a></li>
-                        <li><a class="dropdown-item" href="#">Gloves</a></li>
-                        <li><a class="dropdown-item" href="#">Mountaineering</a></li>
-                        <li><a class="dropdown-item" href="#">Wallet</a></li>
-                        <li><a class="dropdown-item" href="#">Badge</a></li>
+                        <li>
+                            <router-link :to="{ name: 'Pant' }">Pant</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Belt' }">Belt</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Glove' }">Glove</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Mountaineering' }">Mountaineering</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Wallet' }">Wallet</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Daypack' }">Daypack</router-link>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -34,18 +52,36 @@
                 <li>
                     <router-link :to="{ name: 'Jacket' }">Jacket</router-link>
                 </li>
-                <li><a href="/">Sandal</a></li>
-                <li><a href="/">Hat</a></li>
-                <li><a href="/">Shirt</a></li>
-                <li><a href="/">Pant</a></li>
-                <li><a href="/">Belt</a></li>
-                <li><a href="/">Gloves</a></li>
-                <li><a href="/">Mountaineering</a></li>
+                <li>
+                    <router-link :to="{ name: 'Sandal' }">Sandal</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Hat' }">Hat</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Shirt' }">Shirt</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Pant' }">Pant</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Belt' }">Belt</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Glove' }">Glove</router-link>
+                </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Wallet</a></li>
-                        <li><a class="dropdown-item" href="#">Badge</a></li>
+                        <li>
+                            <router-link :to="{ name: 'Mountaineering' }">Mountaineering</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Wallet' }">Wallet</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Daypack' }">Daypack</router-link>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -56,15 +92,33 @@
                 <li>
                     <router-link :to="{ name: 'Jacket' }">Jacket</router-link>
                 </li>
-                <li><a href="/">Sandal</a></li>
-                <li><a href="/">Hat</a></li>
-                <li><a href="/">Shirt</a></li>
-                <li><a href="/">Pant</a></li>
-                <li><a href="/">Belt</a></li>
-                <li><a href="/">Gloves</a></li>
-                <li><a href="/">Mountaineering</a></li>
-                <li><a href="/">Wallet</a></li>
-                <li><a href="/">Badge</a></li>
+                <li>
+                    <router-link :to="{ name: 'Sandal' }">Sandal</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Hat' }">Hat</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Shirt' }">Shirt</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Pant' }">Pant</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Belt' }">Belt</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Glove' }">Glove</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Mountaineering' }">Mountaineering</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Wallet' }">Wallet</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'Daypack' }">Daypack</router-link>
+                </li>
             </ul>
         </div>
     </div>
@@ -72,7 +126,13 @@
 
 <script>
 export default {
-    name: "SearchBar"
+    name: "SearchBar",
+
+    data() {
+        return {
+            keyword: ''
+        }
+    }
 }
 </script>
 

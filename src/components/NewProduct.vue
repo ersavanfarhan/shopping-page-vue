@@ -1,6 +1,6 @@
 <template>
   <div class="arrival-container">
-    <a class="new-product" v-for="product in products" :key="product.id" href="#">
+    <a class="new-product" v-for="product in products" :key="product.id" :href="product.link">
       <img class="product-img" :src="'./img/' + product.gambar" />
       <h6>{{ product.nama }}</h6>
       <p>IDR {{ product.harga }}</p>

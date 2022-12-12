@@ -1,15 +1,15 @@
 <template>
-    <br><br>
-    <img class="shoes-banner" src="../../assets/Banner_shoes.png" />
+<br><br>
+    <img class="sandal-banner" src="../../assets/Banner_sandal.png" />
     <SearchBar />
-    <div class="shoes-container">
+    <div class="sandal-container">
         <h1>{{ title }}</h1>
-        <div class="shoes-product">
-            <router-link :to="('/shoes/' + shoe.id)" class="shoes-item" v-for="shoe in shoes" :key="shoe.id">
-                <img class="shoes-img" :src="'./img/' + shoe.gambar" />
-                <h6>{{ shoe.nama }}</h6>
-                <h6>IDR {{ shoe.harga }}</h6>
-            </router-link>
+        <div class="sandal-product">
+            <a class="sandal-item" v-for="sandal in sandals" :key="sandal.id">
+                <img class="sandal-img" :src="'./img/' + sandal.gambar" />
+                <h6>{{ sandal.nama }}</h6>
+                <p>IDR {{ sandal.harga }}</p>
+            </a>
         </div>
     </div>
 </template>
@@ -19,27 +19,27 @@ import SearchBar from '@/components/SearchBar.vue';
 import axios from 'axios';
 
 export default {
-    name: "ShoesView",
+    name: "SandalView",
     components: {
         SearchBar
     },
 
     data() {
         return {
-            title: "SHOES",
-            shoes: []
-        };
+            title: "SANDAL",
+            sandals: []
+        }
     },
+
     async mounted() {
-        const response = await axios.get("http://localhost:3000/shoes");
-        this.shoes = response.data;
-        // console.log("berhasil", response)
+        const response = await axios.get('http://localhost:3000/sandal')
+        this.sandals = response.data;
     }
 }
 </script>
 
 <style scoped>
-.shoes-banner {
+.sandal-banner {
     width: 100%;
 }
 
@@ -49,18 +49,11 @@ h1 {
     color: rgb(94, 34, 3);
 }
 
-.shoes-item {
-    padding: 10px;
+.sandal-item {
     display: grid;
     text-align: center;
     border: 3px solid rgb(94, 34, 3);
     border-radius: 1em;
-    background-color: white;
-    transition: transform .3s;
-}
-
-.shoes-item:hover {
-    transform: scale(1.2);
 }
 
 a {
@@ -68,17 +61,17 @@ a {
     color: rgb(94, 34, 3);
 }
 
-.shoes-img {
+.sandal-img {
     width: 100%;
     padding: 1em;
 }
 
 @media screen and (max-width: 576px) {
-    .shoes-container {
+    .sandal-container {
         padding: 1vw 5vw;
     }
 
-    .shoes-product {
+    .sandal-product {
         margin-top: 2vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -87,11 +80,11 @@ a {
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .shoes-container {
+    .sandal-container {
         padding: 1vw 12vw;
     }
 
-    .shoes-product {
+    .sandal-product {
         margin-top: 2vw;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -100,11 +93,11 @@ a {
 }
 
 @media screen and (min-width: 992px) {
-    .shoes-container {
+    .sandal-container {
         padding: 1vw 12vw;
     }
 
-    .shoes-product {
+    .sandal-product {
         margin-top: 2vw;
         display: grid;
         grid-template-columns: repeat(5, 1fr);

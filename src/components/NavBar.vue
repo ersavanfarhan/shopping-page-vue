@@ -8,14 +8,23 @@
           <li><router-link class="dropdown-item" :to="{ name: 'About' }">About Us</router-link></li>
         </ul>
       </div>
-      <router-link :to="{ name: 'Login' }"><button class="btn btn-success">LOGIN</button></router-link>
+      <button class="btn btn-danger" @click="checkLogout">LOG OUT</button>
   </nav>
   <router-view />
 </template>
 
 <script>
+import router from '@/router';
+
 export default {
   name: "NavBar",
+
+  methods: {
+    checkLogout() {
+      localStorage.setItem('authenticated', false)
+      router.push("/login");
+    }
+  }
 };
 </script>
 

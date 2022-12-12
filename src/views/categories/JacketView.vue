@@ -5,11 +5,11 @@
     <div class="jacket-container">
         <h1>{{ title }}</h1>
         <div class="jacket-product">
-            <a class="jacket-item" v-for="jacket in jackets" :key="jacket.id">
+            <router-link :to="('/jacket/' + jacket.id)" class="jacket-item" v-for="jacket in jackets" :key="jacket.id">
                 <img class="jacket-img" :src="'./img/' + jacket.gambar" />
                 <h6>{{ jacket.nama }}</h6>
-                <p>IDR {{ jacket.harga }}</p>
-            </a>
+                <h6>IDR {{ jacket.harga }}</h6>
+            </router-link>
         </div>
     </div>
 </template>
@@ -51,10 +51,17 @@ h1 {
 }
 
 .jacket-item {
+    padding: 10px;
     display: grid;
     text-align: center;
     border: 3px solid rgb(94, 34, 3);
     border-radius: 1em;
+    background-color: white;
+    transition: transform .3s;
+}
+
+.jacket-item:hover {
+    transform: scale(1.2);
 }
 
 a {

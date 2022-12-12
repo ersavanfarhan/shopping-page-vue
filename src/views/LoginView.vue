@@ -27,7 +27,7 @@
                     <button class="btn btn-success" @click="checkLogin()">Sign In</button>
                 </div>
                 <p>Haven't Registered? Register <router-link :to="{ name: 'Register' }">here</router-link></p>
-                
+
             </div>
         </form>
     </div>
@@ -56,14 +56,15 @@ export default {
         checkLogin() {
             var inputEmail = document.getElementById("inputEmail").value,
                 inputPassword = document.getElementById("inputPassword").value,
-                emailKey = "qqqq",
-                passwordKey = "qqqq";
+                emailKey = "myemail",
+                passwordKey = "login";
             if (inputEmail == emailKey && inputPassword == passwordKey) {
-                router.push("user");
-                return true;
-            } else {
-                alert('Incorrect login, please enter  email: ' + emailKey + ' and password: ' + passwordKey)
-                return false;
+                router.push("/");
+            } if (inputEmail == emailKey && inputPassword == passwordKey) {
+                localStorage.setItem('authenticated', true);
+            } 
+            else {
+                alert('Incorrect login, please enter email: ' + emailKey + ' and password: ' + passwordKey)
             }
         }
     }
@@ -83,7 +84,7 @@ export default {
     .login-box {
         max-width: 100%;
         padding: 20px 50px 20px 50px;
-        margin: 5vw;
+        margin: 5vw 15vw;
         border-radius: 1em;
         background-color: rgba(0, 0, 0, 0.6);
         color: #fff;

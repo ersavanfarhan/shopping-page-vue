@@ -10,12 +10,6 @@
         opportunity with benefits we offer. We are appriciate every single work for those who want to learn more.</p>
     </div>
     <div class="job-position">
-      <h3><strong>Open Positions</strong></h3>
-      <div class="searching-bar">
-        <input class="form-control" placeholder="Searching for jobs">
-        <button class="btn btn-success">Search</button>
-      </div>
-
       <div class="job-list">
         <JobCard />
       </div>
@@ -114,11 +108,6 @@ export default {
     text-align: justify;
   }
 
-  .searching-bar {
-    display: flex;
-    gap: 15px;
-  }
-
   .job-position {
     margin-bottom: 32px;
   }
@@ -127,14 +116,6 @@ export default {
     margin-top: 20px;
     display: grid;
     gap: 20px;
-  }
-
-  .job-item {
-    display: block;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
   }
 
   #read-dtl-btn {
@@ -169,11 +150,6 @@ export default {
     text-align: justify;
   }
 
-  .searching-bar {
-    display: flex;
-    gap: 15px;
-  }
-
   .job-position {
     margin-bottom: 32px;
   }
@@ -182,14 +158,6 @@ export default {
     margin-top: 20px;
     display: grid;
     gap: 1vw;
-  }
-
-  .job-item {
-    display: block;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
   }
 
   #read-dtl-btn {
