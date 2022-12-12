@@ -1,24 +1,15 @@
-# project-vue
+# How to run the project
 
-## Project setup
+## Download entire repository or clone the project to your directory using git
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+git clone https://github.com/ersavanfarhan/shopping-page-vue.git
 ```
 
-### Compiles and minifies for production
+## Activating API from database
+Open project with your code editor and run this command below
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+npx json-server --watch db.json
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Running the project
+Open index file in dist folder
