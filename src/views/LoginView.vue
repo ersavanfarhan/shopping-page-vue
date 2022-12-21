@@ -26,7 +26,7 @@
                 <div>
                     <button class="btn btn-success" @click="checkLogin()">Sign In</button>
                 </div>
-                <p>Haven't Registered? Register <router-link :to="{ name: 'Register' }">here</router-link></p>
+                <p>Don't have an account yet? Register <router-link :to="{ name: 'Register' }">here</router-link></p>
 
             </div>
         </form>
@@ -74,7 +74,7 @@ export default {
 <style scoped>
 .login-page {
     background: url("../assets/login-bg.jpg");
-    min-height: 180vh;
+    min-height: 65vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;

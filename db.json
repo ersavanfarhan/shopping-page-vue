@@ -5,7 +5,7 @@
       "nama": "Hiking Shoes",
       "harga": 299000,
       "status": true,
-      "link": "http://localhost:8080/?#/shoes",
+      "categories": "shoes",
       "gambar": "Sepatu_Gunung_SNTA.jpg"
     },
     {
@@ -13,7 +13,7 @@
       "nama": "Hiking Jacket",
       "harga": 159000,
       "status": true,
-      "link": "http://localhost:8080/?#/jacket",
+      "categories": "jacket",
       "gambar": "Hiking-Jacket.jpg"
     },
     {
@@ -21,7 +21,7 @@
       "nama": "Daypack 60 L",
       "harga": 135000,
       "status": true,
-      "link": "http://localhost:8080/?#/daypack",
+      "categories": "daypack",
       "gambar": "Daypack60L.jpg"
     },
     {
@@ -29,7 +29,7 @@
       "nama": "Golden Shirt",
       "harga": 65000,
       "status": true,
-      "link": "http://localhost:8080/?#/shirt",
+      "categories": "shirt",
       "gambar": "Golden-Shirt.jpg"
     },
     {
@@ -37,49 +37,49 @@
       "nama": "Grey Hiking Hat",
       "harga": 50000,
       "status": true,
-      "link": "http://localhost:8080/?#/hat",
+      "categories": "hat",
       "gambar": "Grey-Hat.jpg"
     }
   ],
   "best-seller": [
     {
       "id": 1,
-      "kode": "BS-01",
       "nama": "Mini Daypack",
       "harga": 95000,
       "status": true,
+      "categories": "daypack",
       "gambar": "Mini-Daypack.jpg"
     },
     {
       "id": 2,
-      "kode": "BS-02",
       "nama": "Waterproof Jacket",
       "harga": 220000,
       "status": true,
+      "categories": "jacket",
       "gambar": "Yellow-Waterproof.jpg"
     },
     {
       "id": 3,
-      "kode": "BS-03",
-      "nama": "Maroon Hiking Jacket",
+      "nama": "Maroon Jacket",
       "harga": 185000,
       "status": true,
+      "categories": "jacket",
       "gambar": "Maroon-Jacket.jpg"
     },
     {
       "id": 4,
-      "kode": "BS-04",
-      "nama": "Black Hiking Jacket",
+      "nama": "Black Jacket",
       "harga": 155000,
       "status": true,
+      "categories": "jacket",
       "gambar": "Black-Jacket.jpg"
     },
     {
       "id": 5,
-      "kode": "BS-05",
-      "nama": "Silver Hiking Shoes",
+      "nama": "Silver Shoes",
       "harga": 335000,
       "status": true,
+      "categories": "shoes",
       "gambar": "Silver-Shoes.jpg"
     }
   ],
@@ -199,7 +199,7 @@
       "harga": 315000,
       "status": true,
       "gambar": "SNTA pink grey.jpg"
-    },    
+    },
     {
       "id": 7,
       "kode": "SH-11",
@@ -317,7 +317,7 @@
     {
       "id": 11,
       "kode": "JK-07",
-      "nama": "BALR Blue",
+      "nama": "BALR Red",
       "harga": 168000,
       "status": true,
       "gambar": "BALR Red.jpeg"
@@ -475,7 +475,7 @@
     {
       "id": 1,
       "kode": "MT-01",
-      "nama": "Portable Stove",
+      "nama": "Portable Maspion",
       "harga": 235000,
       "status": true,
       "gambar": "Portable Stove.jpg"
@@ -539,6 +539,17 @@
       "harga": 899000,
       "status": true,
       "gambar": "TNF Daypack Silver.jpg"
+    }
+  ],
+  "cart": [],
+  "user": [
+    {
+      "id": 1,
+      "first": "userFirst",
+      "last": "userLast",
+      "email": "myemail@gmail.com",
+      "dob": "2000-12-31",
+      "bio": "Hai there!"
     }
   ]
 }

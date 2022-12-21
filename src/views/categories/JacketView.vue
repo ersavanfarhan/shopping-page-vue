@@ -77,6 +77,7 @@ a {
 @media screen and (max-width: 576px) {
     .jacket-container {
         padding: 1vw 5vw;
+        margin-bottom: 15vw;
     }
 
     .jacket-product {
@@ -90,6 +91,7 @@ a {
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .jacket-container {
         padding: 1vw 12vw;
+        margin-bottom: 10vw;
     }
 
     .jacket-product {
@@ -103,6 +105,7 @@ a {
 @media screen and (min-width: 992px) {
     .jacket-container {
         padding: 1vw 12vw;
+        margin-bottom: 5vw;
     }
 
     .jacket-product {

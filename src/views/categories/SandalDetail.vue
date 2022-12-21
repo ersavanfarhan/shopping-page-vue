@@ -4,11 +4,11 @@
         <h1><strong>Detail Product</strong></h1>
         <div class="product-detail">
             <div class="img-container">
-                <img class="detail-img" :src="'./img/' + shoes.gambar" />
+                <img class="detail-img" :src="'./img/' + sandals.gambar" />
             </div>
             <form class="detail-form" v-on:submit.prevent>
-                <h3>{{ shoes.nama }}</h3>
-                <h5>IDR {{ shoes.harga }}</h5>
+                <h3>{{ sandals.nama }}</h3>
+                <h5>IDR {{ sandals.harga }}</h5>
                 <p><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quae eligendi blanditiis perspiciatis
                         optio repellat iusto nobis magnam expedita? Eveniet fuga recusandae et ea voluptates eaque unde
                         cum qui ipsam.</i></p>
@@ -50,11 +50,11 @@
 import axios from 'axios'
 
 export default {
-    name: 'ShoesDetail',
+    name: 'SandalDetail',
 
     data() {
         return {
-            shoes: [],
+            sandals: [],
             pesanan: {}
         }
     },
@@ -62,7 +62,7 @@ export default {
     methods: {
         addChart() {
             if (this.pesanan.quantity) {
-                this.pesanan.product = this.shoes
+                this.pesanan.product = this.sandals
                 axios.post('http://localhost:3000/cart', this.pesanan)
                     .then(() => {
                         confirm("Your Product Has Been Added");
@@ -76,8 +76,8 @@ export default {
     },
 
     async mounted() {
-        const shoes = await axios.get('http://localhost:3000/shoes/' + this.$route.params.id)
-        this.shoes = shoes.data;
+        const sandal = await axios.get('http://localhost:3000/sandal/' + this.$route.params.id)
+        this.sandals = sandal.data;
     }
 }
 </script>

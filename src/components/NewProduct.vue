@@ -1,10 +1,10 @@
 <template>
   <div class="arrival-container">
-    <a class="new-product" v-for="product in products" :key="product.id" :href="product.link">
+    <router-link class="new-product" v-for="product in products" :key="product.id" :to="('/' + product.categories + '/')">
       <img class="product-img" :src="'./img/' + product.gambar" />
       <h6>{{ product.nama }}</h6>
       <p>IDR {{ product.harga }}</p>
-    </a>
+    </router-link>
   </div>
 </template>
 
@@ -40,7 +40,13 @@ export default {
     text-align: center;
     border: 3px solid rgb(94, 34, 3);
     border-radius: 1em;
+    background-color: white;
+    transition: transform .3s;
   }
+
+  .new-product:hover {
+    transform: scale(1.2);
+}
 
   a {
     text-decoration: none;

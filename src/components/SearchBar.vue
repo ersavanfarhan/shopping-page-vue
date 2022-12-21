@@ -1,9 +1,9 @@
 <template>
     <div class="search-container">
         <div class="search-list">
-            <form class="search-tool" :action="('http://localhost:8080/?#/' + keyword)">
+            <form class="search-tool" >
                 <input class="form-control me-2" placeholder="Find product here" v-model="keyword">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <router-link :to="('/' + keyword + '/')"><button class="btn btn-outline-success">Search</button></router-link>
             </form>
             <ul class="product-list-sm">
                 <li>
@@ -23,7 +23,7 @@
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu p-2">
                         <li>
                             <router-link :to="{ name: 'Pant' }">Pant</router-link>
                         </li>
@@ -72,7 +72,7 @@
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu p-2">
                         <li>
                             <router-link :to="{ name: 'Mountaineering' }">Mountaineering</router-link>
                         </li>

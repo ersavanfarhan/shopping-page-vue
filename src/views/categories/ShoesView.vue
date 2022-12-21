@@ -76,6 +76,7 @@ a {
 @media screen and (max-width: 576px) {
     .shoes-container {
         padding: 1vw 5vw;
+        margin-bottom: 15vw;
     }
 
     .shoes-product {
@@ -89,6 +90,7 @@ a {
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .shoes-container {
         padding: 1vw 12vw;
+        margin-bottom: 10vw;
     }
 
     .shoes-product {
@@ -102,6 +104,7 @@ a {
 @media screen and (min-width: 992px) {
     .shoes-container {
         padding: 1vw 12vw;
+        margin-bottom: 5vw;
     }
 
     .shoes-product {

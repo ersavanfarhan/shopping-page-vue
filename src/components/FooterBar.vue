@@ -37,15 +37,9 @@
                         <li>
                             <router-link :to="{ name: 'Payment' }">Payment Method</router-link>
                         </li>
-                        <a href="#">
-                            <li>Check Out</li>
-                        </a>
-                        <a href="#">
-                            <li>Wishlist</li>
-                        </a>
-                        <a href="#">
-                            <li>Voucher</li>
-                        </a>
+                        <li>
+                            <router-link :to="{ name: 'Partnership' }">Partnership</router-link>
+                        </li>
                     </ul>
                 </div>
 

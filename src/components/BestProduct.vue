@@ -1,10 +1,10 @@
 <template>
-    <div class="best-container">
-    <a class="best-product" v-for="product in products" :key="product.id" href="#">
-      <img class="product-img" :src="('./img/' + product.gambar)"/>
-      <h6>{{ product.nama }}</h6>
-      <p>IDR {{ product.harga }}</p>
-    </a>
+  <div class="best-container">
+    <router-link class="best-product" v-for="best in bests" :key="best.id" :to="('/' + best.categories + '/')">
+      <img class="best-img" :src="('./img/' + best.gambar)" />
+      <h6>{{ best.nama }}</h6>
+      <p>IDR {{ best.harga }}</p>
+    </router-link>
   </div>
 </template>
 
@@ -12,39 +12,45 @@
 import axios from 'axios';
 
 export default {
-    name: "BestProduct",
+  name: "BestProduct",
 
-    data() {
-        return {
-            products: []
-        }
-    },
-
-    async mounted() {
-        const response = await axios.get('http://localhost:3000/best-seller')
-        this.products = response.data
-        // console.log("berhasil", response)
+  data() {
+    return {
+      bests: []
     }
+  },
+
+  async mounted() {
+    const response = await axios.get('http://localhost:3000/best-seller')
+    this.bests = response.data
+    // console.log("berhasil", response)
+  }
 }
 </script>
 
 <style scoped>
-  .best-product {
-    display: grid;
-    text-align: center;
-    border: 3px solid rgb(94, 34, 3);
-    border-radius: 1em;
-  }
+.best-product {
+  display: grid;
+  text-align: center;
+  border: 3px solid rgb(94, 34, 3);
+  border-radius: 1em;
+  background-color: white;
+  transition: transform .3s;
+}
 
-  a {
-    text-decoration: none;
-    color: rgb(94, 34, 3);
-  }
+.best-product:hover {
+  transform: scale(1.2);
+}
 
-  .product-img {
-    width: 100%;
-    padding: 1em;
-  }
+a {
+  text-decoration: none;
+  color: rgb(94, 34, 3);
+}
+
+.best-img {
+  width: 100%;
+  padding: 1em;
+}
 
 @media screen and (max-width: 576px) {
   .best-container {

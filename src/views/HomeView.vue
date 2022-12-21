@@ -4,9 +4,9 @@
 
     <!-- Banner Promo -->
     <div class="banner">
-      <div class="slider" v-for="(slide, index) in slides" :key="index.alt">
+      <router-link class="slider" v-for="(slide, index) in slides" :key="index" :to="{ name: slide.link }" >
         <img class="slide" :src="slide.image" v-show="slide.status" @load="startBanner" />
-      </div>
+      </router-link>
       <div class="banner-btn">
         <span class="material-symbols-outlined" type="button" @click="btnPrev">arrow_back_ios</span>
         <span class="material-symbols-outlined" type="button" @click="btnNext">arrow_forward_ios</span>
@@ -31,7 +31,6 @@
       <div class="card-item d-flex">
         <NewProduct />
       </div>
-      <a href="#"><span class="badge text-bg-warning">Show More</span></a>
     </div>
 
     <!-- Voucher -->
@@ -46,7 +45,6 @@
       <div class="card-item d-flex">
         <BestProduct />
       </div>
-      <a href="#"><span class="badge text-bg-warning">Show More</span></a>
     </div>
 
     <!-- Articles -->
@@ -54,10 +52,6 @@
       <h1><strong>Articles</strong></h1>
       <div class="article-item">
         <ArticleCard />
-      </div>
-
-      <div class="load-btn">
-        <a href="#"><button class="btn btn-light dropdown-toggle">LOAD MORE ARTICLES</button></a>
       </div>
     </div>
   </div>
@@ -84,17 +78,17 @@ export default {
       slides: [
         {
           image: require("../assets/Banner1.png"),
-          alt: "Banner1",
+          link: "Daypack",          
           status: true,
         },
         {
           image: require("../assets/Banner2.png"),
-          alt: "Banner2",
+          link: "Mountaineering",
           status: true,
         },
         {
           image: require("../assets/Banner3.png"),
-          alt: "Banner3",
+          link: "Career",
           status: true,
         },
       ],
@@ -204,12 +198,6 @@ export default {
     color: rgb(94, 34, 3);
     text-align: justify;
   }
-
-  .load-btn {
-    margin-top: 32px;
-    text-align: center;
-    color: rgb(94, 34, 3);
-  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -254,12 +242,6 @@ export default {
     padding: 2vw 5vw 5vw 5vw;
     color: rgb(94, 34, 3);
     text-align: justify;
-  }
-
-  .load-btn {
-    margin-top: 32px;
-    text-align: center;
-    color: rgb(94, 34, 3);
   }
 }
 
@@ -307,12 +289,6 @@ export default {
     padding: 2vw 12vw 5vw 12vw;
     color: rgb(94, 34, 3);
     text-align: justify;
-  }
-
-  .load-btn {
-    margin-top: 32px;
-    text-align: center;
-    color: rgb(94, 34, 3);
   }
 }
 </style>

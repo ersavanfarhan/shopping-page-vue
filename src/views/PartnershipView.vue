@@ -12,6 +12,12 @@
                 support Indonesian local enterprises with the spirit of our government to build a better economy and
                 tourism sector.
             </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolore tenetur provident et deleniti
+                id laborum nostrum eos. Delectus necessitatibus rem amet dolore cupiditate distinctio illum laboriosam
+                eveniet aspernatur in.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolore tenetur provident et deleniti
+                id laborum nostrum eos. Delectus necessitatibus rem amet dolore cupiditate distinctio illum laboriosam
+                eveniet aspernatur in.</p>
         </div>
         <div class="banner-img-lg">
             <img src="../assets/partner-banner.png" />
@@ -27,20 +33,20 @@
             </div>
             <div class="quotes">
                 <h5><strong>
-                    "It is a great opportunity for me learn a lot about
-                    mountaineering. It is important
-                    to concert safety in any time of my activities after all."
-                </strong></h5>
+                        "It is a great opportunity for me learn a lot about
+                        mountaineering. It is important
+                        to concert safety in any time of my activities after all."
+                    </strong></h5>
                 <p>Ersavan - Product Manager of BUMN</p>
             </div>
         </div>
         <div class="testimoni-item">
             <div class="quotes">
                 <h5><strong>
-                    "It has been 5 years since I joined with outdoor store, and now
-                    we are planning to expand our coorporation domestically either a cross the world. If you have
-                    spirit of young enterpreneurship, I suggest you to join us immediately."
-                </strong></h5>
+                        "It has been 5 years since I joined with outdoor store, and now
+                        we are planning to expand our coorporation domestically either a cross the world. If you have
+                        spirit of young enterpreneurship, I suggest you to join us immediately."
+                    </strong></h5>
                 <p>Farhan - CEO of Steel Company</p>
             </div>
             <div>
@@ -53,10 +59,10 @@
             </div>
             <div class="quotes">
                 <h5><strong>
-                    "It is a great opportunity for me learn a lot about
-                    mountaineering. It is important
-                    to concert safety in any time of my activities after all."
-                </strong></h5>
+                        "It is a great opportunity for me learn a lot about
+                        mountaineering. It is important
+                        to concert safety in any time of my activities after all."
+                    </strong></h5>
                 <p>Ersavan - Product Manager of BUMN</p>
             </div>
         </div>
@@ -156,6 +162,7 @@ export default {
         display: flex;
         justify-content: space-between;
     }
+
     .banner-img-sm {
         display: none;
     }

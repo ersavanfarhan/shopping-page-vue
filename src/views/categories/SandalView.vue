@@ -5,11 +5,11 @@
     <div class="sandal-container">
         <h1>{{ title }}</h1>
         <div class="sandal-product">
-            <a class="sandal-item" v-for="sandal in sandals" :key="sandal.id">
+            <router-link :to="('/sandal/' + sandal.id)" class="sandal-item" v-for="sandal in sandals" :key="sandal.id">
                 <img class="sandal-img" :src="'./img/' + sandal.gambar" />
                 <h6>{{ sandal.nama }}</h6>
-                <p>IDR {{ sandal.harga }}</p>
-            </a>
+                <h6>IDR {{ sandal.harga }}</h6>
+            </router-link>
         </div>
     </div>
 </template>
@@ -50,10 +50,17 @@ h1 {
 }
 
 .sandal-item {
+    padding: 10px;
     display: grid;
     text-align: center;
     border: 3px solid rgb(94, 34, 3);
     border-radius: 1em;
+    background-color: white;
+    transition: transform .3s;
+}
+
+.sandal-item:hover {
+    transform: scale(1.2);
 }
 
 a {
@@ -69,6 +76,7 @@ a {
 @media screen and (max-width: 576px) {
     .sandal-container {
         padding: 1vw 5vw;
+        margin-bottom: 15vw;
     }
 
     .sandal-product {
@@ -82,6 +90,7 @@ a {
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .sandal-container {
         padding: 1vw 12vw;
+        margin-bottom: 10vw;
     }
 
     .sandal-product {
@@ -95,6 +104,7 @@ a {
 @media screen and (min-width: 992px) {
     .sandal-container {
         padding: 1vw 12vw;
+        margin-bottom: 5vw;
     }
 
     .sandal-product {
