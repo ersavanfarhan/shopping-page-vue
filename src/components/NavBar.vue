@@ -10,8 +10,8 @@
       </ul>
     </div>
 
-    <router-link :to="{ name: 'Cart' }" v-show="iconNavbar">
-      <span type="button" class="material-symbols-outlined">
+    <router-link :to="{ name: 'Cart' }">
+      <span id="iconCart" type="button" class="material-symbols-outlined">
         shopping_cart
         <span
           class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
@@ -31,28 +31,29 @@ export default {
 
   data() {
     return {
-      iconNavbar: true
     }
   },
 
   methods: {
     checkLogout() {
+      var cart = document.getElementById("iconCart")
       localStorage.setItem('authenticated', false)
       router.push("/login");
-      this.iconNavbar = false
+      cart.style.display = "none"
     },
 
-    showIcon: function() {
+    showIcon: function () {
+      const cart = document.getElementById("iconCart")
       const isAuthenticated = JSON.parse(localStorage.getItem("authenticated"));
       if (!isAuthenticated) {
-        this.iconNavbar = false
-      } 
+        cart.style.display = "none"
+      }
     }
   },
 
   mounted() {
-        this.showIcon();
-    }
+    this.showIcon();
+  }
 };
 </script>
 

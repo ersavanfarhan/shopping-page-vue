@@ -541,7 +541,20 @@
       "gambar": "TNF Daypack Silver.jpg"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "quantity": 1,
+      "product": {
+        "id": 2,
+        "kode": "BS-05",
+        "nama": "SNTA Silver Black",
+        "harga": 335000,
+        "status": true,
+        "gambar": "Silver-Shoes.jpg"
+      },
+      "id": 1
+    }
+  ],
   "user": [
     {
       "id": 1,

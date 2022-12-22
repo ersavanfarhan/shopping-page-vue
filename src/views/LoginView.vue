@@ -14,14 +14,17 @@
                 </div>
                 <div class="input">
                     <h6>Password :</h6>
-                    <input class="form-control" id="inputPassword" :type="inputType" placeholder="Type your password"
-                        required>
-                </div>
-                <div>
-                    <label class="show-btn" @click="toggleShowPassword">
-                        <span class="badge text-bg-warning" v-if="buttonType">{{ titleShow }}</span>
-                        <span class="badge text-bg-warning" v-if="!buttonType">{{ titleHide }}</span>
-                    </label>
+                    <div class="input input-group">
+                        <input id="inputPassword" :type="inputType" class="form-control" placeholder="Type your password" required>
+                        <div type="button" class="input-group-text" @click="toggleShowPassword">
+                            <span class="material-symbols-outlined" v-if="buttonType">
+                                visibility_off
+                            </span>
+                            <span class="material-symbols-outlined" v-if="!buttonType">
+                                visibility
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <button class="btn btn-success" @click="checkLogin()">Sign In</button>
@@ -42,9 +45,7 @@ export default {
     data() {
         return {
             inputType: "password",
-            buttonType: true,
-            titleShow: 'Show Password',
-            titleHide: 'Hide Password'
+            buttonType: true
         }
     },
     methods: {
@@ -74,17 +75,20 @@ export default {
 <style scoped>
 .login-page {
     background: url("../assets/login-bg.jpg");
-    min-height: 65vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
 @media screen and (max-width: 992px) {
+    .login-page {
+    min-height: 80vh;
+    }
+
     .login-box {
         max-width: 100%;
-        padding: 20px 50px 20px 50px;
-        margin: 5vw 15vw;
+        padding: 3vw 5vw;
+        margin: 5vw 5vw;
         border-radius: 1em;
         background-color: rgba(0, 0, 0, 0.6);
         color: #fff;
@@ -100,10 +104,14 @@ export default {
 }
 
 @media screen and (min-width: 992px) {
+    .login-page {
+    min-height: 120vh;
+    }
+
     .login-box {
         max-width: 100%;
         padding: 3rem;
-        margin: 5vw 30vw;
+        margin: 5vw 25vw;
         border-radius: 1em;
         background-color: rgba(0, 0, 0, 0.6);
         color: #fff;

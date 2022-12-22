@@ -91,7 +91,7 @@ export default {
 
   @keyframes slide_animation {
     50% {
-      transform: translateX(-360vw);
+      transform: translateX(-460vw);
     }
 
     100% {
@@ -102,7 +102,7 @@ export default {
   .item {
     width: 100%;
     height: 100%;
-    animation: slide_animation 50s infinite;
+    animation: slide_animation 35s infinite;
   }
 
   .photo {

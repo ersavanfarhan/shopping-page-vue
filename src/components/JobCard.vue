@@ -51,7 +51,6 @@ export default {
     async mounted() {
         const response = await axios.get('http://localhost:3000/jobs')
         this.jobs = response.data;
-        // console.log("berhasil", response)
     },
 
     computed: {
@@ -75,6 +74,7 @@ export default {
     border: 1px solid black;
     border-radius: 0.5rem;
     padding: 0.5rem;
+    text-align: justify;
 }
 
 span {
