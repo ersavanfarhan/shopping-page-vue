@@ -6,7 +6,7 @@ git clone https://github.com/ersavanfarhan/shopping-page-vue.git
 ```
 
 ## Activating API from database
-Open project with your code editor and run this command below
+Open project folder with your code editor/git bash and run a command below
 ```
 npx json-server --watch db.json
 ```
